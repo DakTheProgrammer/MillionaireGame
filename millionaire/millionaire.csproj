@@ -86,5 +86,8 @@
   <ItemGroup>
     <None Include="Resources\who-wants-to-be-a-millionaire-template-1-728.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\answerbox.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
