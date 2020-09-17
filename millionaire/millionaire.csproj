@@ -89,5 +89,23 @@
   <ItemGroup>
     <None Include="Resources\answerbox.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WalkAway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

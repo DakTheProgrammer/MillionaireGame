@@ -117,4 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>15     $1 MILLION
+14     $500,000
+13     $250,000
+12     $125,000
+11     $64,000
+10     $32,000
+ 9      $16,000
+ 8      $8,000
+ 7      $4,000
+ 6      $2,000
+ 5      $1,000
+ 4      $500
+ 3      $300
+ 2      $200
+ 1      $100</value>
+  </data>
 </root>
