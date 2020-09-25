@@ -15,6 +15,39 @@ namespace millionaire
         Game GameMil = new Game();
         Label[] Rounds;
 
+        private void correct()
+        {
+            if (GameMil.Round == 15)
+            {
+
+            }
+            else
+            {
+                Rounds[GameMil.Round].BackColor = Color.Black;
+
+                AnsA.BackColor = Color.Black;
+                AnsB.BackColor = Color.Black;
+                AnsC.BackColor = Color.Black;
+                AnsD.BackColor = Color.Black;
+
+                GameMil.incRound();
+                
+                Rounds[GameMil.Round].BackColor = Color.Orange;
+
+                Question.Text = GameMil.Question;
+
+                AnsA.Text = "1: " + GameMil.A;
+                AnsB.Text = "2: " + GameMil.B;
+                AnsC.Text = "3: " + GameMil.C;
+                AnsD.Text = "4: " + GameMil.D;
+            }
+        }
+
+        private void incorrect()
+        {
+
+        }
+
         public MainForm()
         {
             InitializeComponent();
@@ -41,7 +74,84 @@ namespace millionaire
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
+            char tester = InputBox.Text[0];
 
+            bool good = (tester >= 49 && tester <= 52) ? true : false;
+
+            if(good)
+            {
+                int ans = Convert.ToInt32(tester);
+                ans -= 48;
+
+                if(ans == 1)
+                {
+                    if(GameMil.A == GameMil.Answer)
+                    {
+                        AnsA.BackColor = Color.Green;
+                        AnsB.BackColor = Color.Red;
+                        AnsC.BackColor = Color.Red;
+                        AnsD.BackColor = Color.Red;
+
+                        correct();
+                    }
+                    else
+                    {
+                        incorrect();
+                    }
+                }
+                else if(ans == 2)
+                {
+                    if (GameMil.B == GameMil.Answer)
+                    {
+                        AnsB.BackColor = Color.Green;
+                        AnsA.BackColor = Color.Red;
+                        AnsC.BackColor = Color.Red;
+                        AnsD.BackColor = Color.Red;
+
+                        correct();
+                    }
+                    else
+                    {
+                        incorrect();
+                    }
+                }
+                else if (ans == 3)
+                {
+                    if (GameMil.C == GameMil.Answer)
+                    {
+                        AnsC.BackColor = Color.Green;
+                        AnsB.BackColor = Color.Red;
+                        AnsA.BackColor = Color.Red;
+                        AnsD.BackColor = Color.Red;
+
+                        correct();
+                    }
+                    else
+                    {
+                        incorrect();
+                    }
+                }
+                else
+                {
+                    if (GameMil.D == GameMil.Answer)
+                    {
+                        AnsD.BackColor = Color.Green;
+                        AnsB.BackColor = Color.Red;
+                        AnsC.BackColor = Color.Red;
+                        AnsA.BackColor = Color.Red;
+
+                        correct();
+                    }
+                    else
+                    {
+                        incorrect();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Not a proper choice try agan!");
+            }
         }
 
         private void fiftyfifty_Click(object sender, EventArgs e)

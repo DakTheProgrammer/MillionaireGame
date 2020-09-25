@@ -358,10 +358,10 @@
             this.Timer.BackgroundImage = global::millionaire.Properties.Resources.Timer;
             this.Timer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Timer.Controls.Add(this.TimerLabel);
-            this.Timer.Location = new System.Drawing.Point(74, 28);
+            this.Timer.Location = new System.Drawing.Point(76, 28);
             this.Timer.Margin = new System.Windows.Forms.Padding(4);
             this.Timer.Name = "Timer";
-            this.Timer.Size = new System.Drawing.Size(117, 96);
+            this.Timer.Size = new System.Drawing.Size(107, 96);
             this.Timer.TabIndex = 3;
             // 
             // TimerLabel
@@ -369,7 +369,7 @@
             this.TimerLabel.AutoSize = true;
             this.TimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimerLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TimerLabel.Location = new System.Drawing.Point(32, 27);
+            this.TimerLabel.Location = new System.Drawing.Point(26, 27);
             this.TimerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TimerLabel.Name = "TimerLabel";
             this.TimerLabel.Size = new System.Drawing.Size(57, 39);
@@ -444,6 +444,7 @@
             // 
             // Question
             // 
+            this.Question.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Question.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Question.Location = new System.Drawing.Point(155, 21);
             this.Question.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -517,7 +518,7 @@
             // 
             this.ClockBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClockBox.Controls.Add(this.Timer);
-            this.ClockBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClockBox.Font = new System.Drawing.Font("Symbol", 8.25F);
             this.ClockBox.ForeColor = System.Drawing.SystemColors.Control;
             this.ClockBox.Location = new System.Drawing.Point(13, 303);
             this.ClockBox.Margin = new System.Windows.Forms.Padding(4);
