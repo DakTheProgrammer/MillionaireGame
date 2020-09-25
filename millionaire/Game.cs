@@ -15,20 +15,68 @@ namespace millionaire
         private string[] ansB;
         private string[] ansC;
         private string[] ansD;
+        private string[] correctAns;
+        private int roundIndex;
 
+        private void MakeInput(StreamReader input)
+        {
+            Random rand = new Random();
+            int rannum = 0;
+            
+            for(int i = 0; i < 15; i++)
+            {
+                questions[i] = input.ReadLine();
+                correctAns[i] = input.ReadLine();
 
-        Game()
+                rannum = rand.Next(1, 5);
+
+                if(rannum == 1)
+                {
+                    ansA[i] = correctAns[i];
+                    ansB[i] = input.ReadLine();
+                    ansC[i] = input.ReadLine();
+                    ansD[i] = input.ReadLine();
+                }
+                else if(rannum == 2)
+                {
+                    ansA[i] = input.ReadLine();
+                    ansB[i] = correctAns[i];
+                    ansC[i] = input.ReadLine();
+                    ansD[i] = input.ReadLine();
+                }
+                else if (rannum == 3)
+                {
+                    ansA[i] = input.ReadLine();
+                    ansB[i] = input.ReadLine();
+                    ansC[i] = correctAns[i];
+                    ansD[i] = input.ReadLine();
+                }
+                else
+                {
+                    ansA[i] = input.ReadLine();
+                    ansB[i] = input.ReadLine();
+                    ansC[i] = input.ReadLine();
+                    ansD[i] = correctAns[i];
+                }
+            }
+        }
+
+        public Game()
         {
             questions = new string[15];
-            ansA = new string[4];
-            ansA = new string[4];
-            ansA = new string[4];
+            ansA = new string[15];
+            ansB = new string[15];
+            ansC = new string[15];
+            ansD = new string[15];
 
+            correctAns = new string[15];
+
+            roundIndex = 0;
         }
 
         public string test()
         {
-            return "a";
+            return ansA[0];
         }
         public void PromptFile()
         {
@@ -56,6 +104,8 @@ namespace millionaire
                         StreamReader textIn = new StreamReader(
                             new FileStream(fileName, FileMode.OpenOrCreate,
                             FileAccess.Read));
+
+                        MakeInput(textIn);
                     }
                     // handle exception if StreamReader is unavailable
                     catch (IOException)

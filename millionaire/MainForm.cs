@@ -22,7 +22,7 @@ namespace millionaire
         private void MainForm_Load(object sender, EventArgs e)
         {
             GameMil.PromptFile();
-            AnsA.Text += GameMil.test();
+            Question.Text = GameMil.test();
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
