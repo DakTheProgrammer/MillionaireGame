@@ -94,7 +94,7 @@ namespace millionaire
             string fileName; // name of file containing data
 
             // exit event handler if user clicked "Cancel"
-            if (result != DialogResult.Cancel)
+            if (result != DialogResult.Cancel && result != DialogResult.Abort)
             {
                 // get specified file name
                 fileName = fileChooser.FileName;

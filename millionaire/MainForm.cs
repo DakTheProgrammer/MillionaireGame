@@ -90,7 +90,7 @@ namespace millionaire
                 AnsD.BackColor = Color.Red;
             }
 
-            string temp = "Oh thats the wrong answer you will be leaving today with: " + safe;
+            string temp = "Oh thats the wrong answer you will be leaving today with: " + safe + "$\nPlay again?";
 
             DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
