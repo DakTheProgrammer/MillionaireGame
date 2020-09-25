@@ -454,9 +454,9 @@
             this.AnsHereGBox.Controls.Add(this.InputBox);
             this.AnsHereGBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnsHereGBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.AnsHereGBox.Location = new System.Drawing.Point(291, 307);
+            this.AnsHereGBox.Location = new System.Drawing.Point(291, 303);
             this.AnsHereGBox.Name = "AnsHereGBox";
-            this.AnsHereGBox.Size = new System.Drawing.Size(363, 131);
+            this.AnsHereGBox.Size = new System.Drawing.Size(363, 135);
             this.AnsHereGBox.TabIndex = 7;
             this.AnsHereGBox.TabStop = false;
             this.AnsHereGBox.Text = "Answer Here";
@@ -477,9 +477,9 @@
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubmitButton.ForeColor = System.Drawing.Color.White;
-            this.SubmitButton.Location = new System.Drawing.Point(153, 75);
+            this.SubmitButton.Location = new System.Drawing.Point(132, 75);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(75, 33);
+            this.SubmitButton.Size = new System.Drawing.Size(115, 34);
             this.SubmitButton.TabIndex = 2;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = false;
