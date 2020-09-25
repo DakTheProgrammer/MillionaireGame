@@ -18,14 +18,27 @@ namespace millionaire
 
         private void PlayAgain()
         {
-
+            MainForm NewForm = new MainForm();
+            NewForm.Show();
+            this.Dispose(false);
         }
 
         private void correct()
         {
             if (GameMil.Round == 14)
             {
-                MessageBox.Show("CONGRATS YOU WON 1 MILLION DOLLARS!!!");
+                string temp = "CONGRATS YOU WON 1 MILLION DOLLARS!!\nPlay again?";
+
+                DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (YorN == DialogResult.Yes)
+                {
+                    PlayAgain();
+                }
+                else
+                {
+                    Close();
+                }
             }
             else
             {
@@ -77,7 +90,18 @@ namespace millionaire
                 AnsD.BackColor = Color.Red;
             }
 
-            MessageBox.Show("Oh thats the wrong answer you will be leaving today with: " + safe);
+            string temp = "Oh thats the wrong answer you will be leaving today with: " + safe;
+
+            DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (YorN == DialogResult.Yes)
+            {
+                PlayAgain();
+            }
+            else
+            {
+                Close();
+            }
         }
 
         public MainForm()
@@ -231,8 +255,21 @@ namespace millionaire
                 text += temp[i];
             }
 
-            MessageBox.Show("Congrats you won: " + text);
-            string play = "play again?";
+            temp = "Congrats you won: " + text + "\nPlay again?";
+
+
+
+            DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if(YorN == DialogResult.Yes)
+            {
+                PlayAgain();
+            }
+            else
+            {
+                Close();
+            }
+
         }
     }
 }
