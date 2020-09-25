@@ -22,5 +22,9 @@ namespace millionaire
 
         }
 
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

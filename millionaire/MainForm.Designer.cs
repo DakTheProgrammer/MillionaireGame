@@ -60,8 +60,9 @@
             this.AnsHereGBox = new System.Windows.Forms.GroupBox();
             this.InputBox = new System.Windows.Forms.TextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.OneHun = new System.Windows.Forms.Label();
+            this.TwoHun = new System.Windows.Forms.Label();
+            this.ClockBox = new System.Windows.Forms.GroupBox();
             this.LifelineBox.SuspendLayout();
             this.Values.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoMil)).BeginInit();
@@ -69,6 +70,7 @@
             this.QuestionNAnswer.SuspendLayout();
             this.InsBox.SuspendLayout();
             this.AnsHereGBox.SuspendLayout();
+            this.ClockBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // LifelineBox
@@ -116,8 +118,8 @@
             // Values
             // 
             this.Values.BackColor = System.Drawing.Color.Black;
-            this.Values.Controls.Add(this.label2);
-            this.Values.Controls.Add(this.label1);
+            this.Values.Controls.Add(this.TwoHun);
+            this.Values.Controls.Add(this.OneHun);
             this.Values.Controls.Add(this.ThreeHun);
             this.Values.Controls.Add(this.FiveHun);
             this.Values.Controls.Add(this.OneK);
@@ -172,7 +174,7 @@
             // 
             this.OneK.BackColor = System.Drawing.Color.Black;
             this.OneK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OneK.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.OneK.ForeColor = System.Drawing.Color.DodgerBlue;
             this.OneK.Location = new System.Drawing.Point(8, 287);
             this.OneK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.OneK.Name = "OneK";
@@ -237,7 +239,7 @@
             // 
             this.ThirTwoK.BackColor = System.Drawing.Color.Black;
             this.ThirTwoK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThirTwoK.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ThirTwoK.ForeColor = System.Drawing.Color.DodgerBlue;
             this.ThirTwoK.Location = new System.Drawing.Point(8, 159);
             this.ThirTwoK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ThirTwoK.Name = "ThirTwoK";
@@ -302,7 +304,7 @@
             // 
             this.mil.BackColor = System.Drawing.Color.Black;
             this.mil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mil.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.mil.ForeColor = System.Drawing.SystemColors.Control;
             this.mil.Location = new System.Drawing.Point(8, 33);
             this.mil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mil.Name = "mil";
@@ -328,10 +330,10 @@
             this.Timer.BackgroundImage = global::millionaire.Properties.Resources.Timer;
             this.Timer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Timer.Controls.Add(this.TimerLabel);
-            this.Timer.Location = new System.Drawing.Point(65, 307);
+            this.Timer.Location = new System.Drawing.Point(74, 28);
             this.Timer.Margin = new System.Windows.Forms.Padding(4);
             this.Timer.Name = "Timer";
-            this.Timer.Size = new System.Drawing.Size(156, 129);
+            this.Timer.Size = new System.Drawing.Size(117, 96);
             this.Timer.TabIndex = 3;
             // 
             // TimerLabel
@@ -339,7 +341,7 @@
             this.TimerLabel.AutoSize = true;
             this.TimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimerLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TimerLabel.Location = new System.Drawing.Point(51, 41);
+            this.TimerLabel.Location = new System.Drawing.Point(32, 27);
             this.TimerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TimerLabel.Name = "TimerLabel";
             this.TimerLabel.Size = new System.Drawing.Size(57, 39);
@@ -461,11 +463,11 @@
             // 
             // InputBox
             // 
-            this.InputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputBox.Location = new System.Drawing.Point(46, 42);
-            this.InputBox.MaxLength = 1;
+            this.InputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InputBox.Location = new System.Drawing.Point(6, 42);
+            this.InputBox.MaxLength = 100;
             this.InputBox.Name = "InputBox";
-            this.InputBox.Size = new System.Drawing.Size(283, 22);
+            this.InputBox.Size = new System.Drawing.Size(351, 27);
             this.InputBox.TabIndex = 2;
             this.InputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -475,38 +477,54 @@
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubmitButton.ForeColor = System.Drawing.Color.White;
-            this.SubmitButton.Location = new System.Drawing.Point(133, 70);
+            this.SubmitButton.Location = new System.Drawing.Point(153, 75);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(75, 33);
             this.SubmitButton.TabIndex = 2;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = false;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
-            // label1
+            // OneHun
             // 
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(8, 388);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 26);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "  1     $100";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OneHun.BackColor = System.Drawing.Color.Black;
+            this.OneHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OneHun.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.OneHun.Location = new System.Drawing.Point(8, 388);
+            this.OneHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.OneHun.Name = "OneHun";
+            this.OneHun.Size = new System.Drawing.Size(251, 26);
+            this.OneHun.TabIndex = 18;
+            this.OneHun.Text = "  1     $100";
+            this.OneHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // TwoHun
             // 
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(8, 362);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 26);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "  2     $200";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TwoHun.BackColor = System.Drawing.Color.Black;
+            this.TwoHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TwoHun.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.TwoHun.Location = new System.Drawing.Point(8, 362);
+            this.TwoHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TwoHun.Name = "TwoHun";
+            this.TwoHun.Size = new System.Drawing.Size(251, 26);
+            this.TwoHun.TabIndex = 19;
+            this.TwoHun.Text = "  2     $200";
+            this.TwoHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ClockBox
+            // 
+            this.ClockBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClockBox.Controls.Add(this.Timer);
+            this.ClockBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClockBox.ForeColor = System.Drawing.SystemColors.Control;
+            this.ClockBox.Location = new System.Drawing.Point(13, 303);
+            this.ClockBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ClockBox.Name = "ClockBox";
+            this.ClockBox.Padding = new System.Windows.Forms.Padding(4);
+            this.ClockBox.Size = new System.Drawing.Size(267, 133);
+            this.ClockBox.TabIndex = 2;
+            this.ClockBox.TabStop = false;
+            this.ClockBox.Text = "Timer";
             // 
             // MainForm
             // 
@@ -515,10 +533,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1287, 697);
+            this.Controls.Add(this.ClockBox);
             this.Controls.Add(this.AnsHereGBox);
             this.Controls.Add(this.InsBox);
             this.Controls.Add(this.LogoMil);
-            this.Controls.Add(this.Timer);
             this.Controls.Add(this.Values);
             this.Controls.Add(this.QuestionNAnswer);
             this.Controls.Add(this.LifelineBox);
@@ -538,6 +556,7 @@
             this.InsBox.ResumeLayout(false);
             this.AnsHereGBox.ResumeLayout(false);
             this.AnsHereGBox.PerformLayout();
+            this.ClockBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -574,8 +593,9 @@
         private System.Windows.Forms.GroupBox AnsHereGBox;
         private System.Windows.Forms.TextBox InputBox;
         private System.Windows.Forms.Button SubmitButton;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TwoHun;
+        private System.Windows.Forms.Label OneHun;
+        private System.Windows.Forms.GroupBox ClockBox;
     }
 }
 
