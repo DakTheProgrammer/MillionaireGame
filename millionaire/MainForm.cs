@@ -12,6 +12,8 @@ namespace millionaire
 {
     public partial class MainForm : Form
     {
+        Game GameMil = new Game();
+
         public MainForm()
         {
             InitializeComponent();
@@ -19,10 +21,21 @@ namespace millionaire
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            GameMil.PromptFile();
+            AnsA.Text += GameMil.test();
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fiftyfifty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void walk_Click(object sender, EventArgs e)
         {
 
         }

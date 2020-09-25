@@ -101,6 +101,7 @@
             this.walk.Size = new System.Drawing.Size(177, 112);
             this.walk.TabIndex = 1;
             this.walk.UseVisualStyleBackColor = false;
+            this.walk.Click += new System.EventHandler(this.walk_Click);
             // 
             // fiftyfifty
             // 
@@ -114,6 +115,7 @@
             this.fiftyfifty.Size = new System.Drawing.Size(177, 111);
             this.fiftyfifty.TabIndex = 0;
             this.fiftyfifty.UseVisualStyleBackColor = false;
+            this.fiftyfifty.Click += new System.EventHandler(this.fiftyfifty_Click);
             // 
             // Values
             // 
