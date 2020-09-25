@@ -16,11 +16,16 @@ namespace millionaire
         Label[] Rounds;
         int safe = 0;
 
+        private void PlayAgain()
+        {
+
+        }
+
         private void correct()
         {
             if (GameMil.Round == 14)
             {
-                    
+                MessageBox.Show("CONGRATS YOU WON 1 MILLION DOLLARS!!!");
             }
             else
             {
@@ -227,6 +232,7 @@ namespace millionaire
             }
 
             MessageBox.Show("Congrats you won: " + text);
+            string play = "play again?";
         }
     }
 }

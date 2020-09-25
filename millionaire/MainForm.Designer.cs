@@ -367,12 +367,12 @@
             // TimerLabel
             // 
             this.TimerLabel.AutoSize = true;
-            this.TimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimerLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TimerLabel.Location = new System.Drawing.Point(26, 27);
+            this.TimerLabel.Location = new System.Drawing.Point(29, 28);
             this.TimerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(57, 39);
+            this.TimerLabel.Size = new System.Drawing.Size(51, 36);
             this.TimerLabel.TabIndex = 0;
             this.TimerLabel.Text = "30";
             // 
@@ -471,9 +471,9 @@
             // InsLabel
             // 
             this.InsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.InsLabel.Location = new System.Drawing.Point(7, 33);
+            this.InsLabel.Location = new System.Drawing.Point(7, 41);
             this.InsLabel.Name = "InsLabel";
-            this.InsLabel.Size = new System.Drawing.Size(320, 385);
+            this.InsLabel.Size = new System.Drawing.Size(320, 369);
             this.InsLabel.TabIndex = 0;
             this.InsLabel.Text = resources.GetString("InsLabel.Text");
             // 
@@ -518,7 +518,7 @@
             // 
             this.ClockBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClockBox.Controls.Add(this.Timer);
-            this.ClockBox.Font = new System.Drawing.Font("Symbol", 8.25F);
+            this.ClockBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClockBox.ForeColor = System.Drawing.SystemColors.Control;
             this.ClockBox.Location = new System.Drawing.Point(13, 303);
             this.ClockBox.Margin = new System.Windows.Forms.Padding(4);

@@ -118,7 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="InsLabel.Text" xml:space="preserve">
-    <value>Welcome to Who Wants To Be A Millionaire! To start the game enter the input file for the questions and answers in the "Answer Here" text box to the left. Once the game starts you will have 30 seconds to answer each question by putting your answer in the textbox below and hitting submit. You will play 15 rounds until you get a question wrong or when you walk away keeping all the money that you have earned until that point. There are also "Safe havens " at rounds 1, 5, 10 which will guarantee you that money if you get an answer wrong after that point. If a question seems too hard to answer you have been allocated one lifeline called "50:50" which will make it so that two of the incorrect answers will be removed as choices. Good luck and have fun on Who Wants To Be A Millionaire!
-</value>
+    <value>Welcome to Who Wants To Be A Millionaire! Once the game starts you will have 30 seconds to answer each question by putting your answer in the textbox to the left and hitting submit. You will play 15 rounds until you get a question wrong or when you walk away keeping all the money that you have earned until that point. There are also "Safe havens " at rounds 1, 5, 10 which will guarantee you that money if you get an answer wrong after that point. If a question seems too hard to answer you have been allocated one lifeline called "50:50" which will make it so that two of the incorrect answers will be removed as choices. Good luck and have fun on Who Wants To Be A Millionaire!</value>
   </data>
 </root>
