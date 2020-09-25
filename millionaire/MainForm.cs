@@ -14,15 +14,20 @@ namespace millionaire
     {
         Game GameMil = new Game();
         Label[] Rounds;
+        int safe = 0;
 
         private void correct()
         {
-            if (GameMil.Round == 15)
+            if (GameMil.Round == 14)
             {
-
+                    
             }
             else
             {
+                safe = GameMil.Round == 0 ? 100 : safe;
+                safe = GameMil.Round == 4 ? 1000 : safe;
+                safe = GameMil.Round == 9 ? 32000 : safe;
+
                 Rounds[GameMil.Round].BackColor = Color.Black;
 
                 AnsA.BackColor = Color.Black;
@@ -45,7 +50,29 @@ namespace millionaire
 
         private void incorrect()
         {
+            AnsA.BackColor = Color.Red;
+            AnsB.BackColor = Color.Red;
+            AnsC.BackColor = Color.Red;
+            AnsD.BackColor = Color.Red;
 
+            if(GameMil.A == GameMil.Answer)
+            {
+                AnsA.BackColor = Color.Green;
+            }
+            else if (GameMil.B == GameMil.Answer)
+            {
+                AnsA.BackColor = Color.Green;
+            }
+            else if (GameMil.C == GameMil.Answer)
+            {
+                AnsA.BackColor = Color.Green;
+            }
+            else
+            {
+                AnsD.BackColor = Color.Red;
+            }
+
+            MessageBox.Show("Oh thats the wrong answer you will be leaving today with: " + safe);
         }
 
         public MainForm()
@@ -76,9 +103,7 @@ namespace millionaire
         {
             char tester = InputBox.Text[0];
 
-            bool good = (tester >= 49 && tester <= 52) ? true : false;
-
-            if(good)
+            if(tester >= 49 && tester <= 52)
             {
                 int ans = Convert.ToInt32(tester);
                 ans -= 48;

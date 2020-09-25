@@ -86,7 +86,6 @@ namespace millionaire
             roundIndex++;
         }
 
-
         public void PromptFile()
         {
             // create dialog box enabling user to open file
