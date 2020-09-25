@@ -22,22 +22,22 @@ namespace millionaire
         {
             Random rand = new Random();
             int rannum = 0;
-            
-            for(int i = 0; i < 15; i++)
+            int i = 0;
+            do
             {
                 questions[i] = input.ReadLine();
                 correctAns[i] = input.ReadLine();
 
                 rannum = rand.Next(1, 5);
 
-                if(rannum == 1)
+                if (rannum == 1)
                 {
                     ansA[i] = correctAns[i];
                     ansB[i] = input.ReadLine();
                     ansC[i] = input.ReadLine();
                     ansD[i] = input.ReadLine();
                 }
-                else if(rannum == 2)
+                else if (rannum == 2)
                 {
                     ansA[i] = input.ReadLine();
                     ansB[i] = correctAns[i];
@@ -58,7 +58,9 @@ namespace millionaire
                     ansC[i] = input.ReadLine();
                     ansD[i] = correctAns[i];
                 }
-            }
+
+                i++;
+            } while (i < 15);
         }
 
         public Game()
@@ -128,6 +130,24 @@ namespace millionaire
 
         public string Question
         { get { return questions[roundIndex]; } }
+
+        public string A
+        { get { return ansA[roundIndex]; } }
+
+        public string B
+        { get { return ansB[roundIndex]; } }
+
+        public string C
+        { get { return ansC[roundIndex]; } }
+
+        public string D
+        { get { return ansD[roundIndex]; } }
+
+        public int Round
+        { get { return roundIndex; } }
+
+        public string Answer
+        { get{ return correctAns[roundIndex]; } }
 
     }
 }

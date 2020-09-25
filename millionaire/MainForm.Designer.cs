@@ -47,7 +47,7 @@
             this.OneTwenFiK = new System.Windows.Forms.Label();
             this.TwoFiftK = new System.Windows.Forms.Label();
             this.FivHunK = new System.Windows.Forms.Label();
-            this.mil = new System.Windows.Forms.Label();
+            this.Mil = new System.Windows.Forms.Label();
             this.LogoMil = new System.Windows.Forms.PictureBox();
             this.Timer = new System.Windows.Forms.Panel();
             this.TimerLabel = new System.Windows.Forms.Label();
@@ -134,7 +134,7 @@
             this.Values.Controls.Add(this.OneTwenFiK);
             this.Values.Controls.Add(this.TwoFiftK);
             this.Values.Controls.Add(this.FivHunK);
-            this.Values.Controls.Add(this.mil);
+            this.Values.Controls.Add(this.Mil);
             this.Values.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Values.ForeColor = System.Drawing.SystemColors.Control;
             this.Values.Location = new System.Drawing.Point(1004, 15);
@@ -328,18 +328,18 @@
             this.FivHunK.Text = "14     $500,000";
             this.FivHunK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // mil
+            // Mil
             // 
-            this.mil.BackColor = System.Drawing.Color.Black;
-            this.mil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mil.ForeColor = System.Drawing.SystemColors.Control;
-            this.mil.Location = new System.Drawing.Point(8, 33);
-            this.mil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.mil.Name = "mil";
-            this.mil.Size = new System.Drawing.Size(251, 26);
-            this.mil.TabIndex = 5;
-            this.mil.Text = "15     $1 MILLION";
-            this.mil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Mil.BackColor = System.Drawing.Color.Black;
+            this.Mil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mil.ForeColor = System.Drawing.SystemColors.Control;
+            this.Mil.Location = new System.Drawing.Point(8, 33);
+            this.Mil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Mil.Name = "Mil";
+            this.Mil.Size = new System.Drawing.Size(251, 26);
+            this.Mil.TabIndex = 5;
+            this.Mil.Text = "15     $1 MILLION";
+            this.Mil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LogoMil
             // 
@@ -403,7 +403,7 @@
             this.AnsD.Name = "AnsD";
             this.AnsD.Size = new System.Drawing.Size(476, 43);
             this.AnsD.TabIndex = 4;
-            this.AnsD.Text = "D:";
+            this.AnsD.Text = "4: ";
             this.AnsD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AnsC
@@ -415,7 +415,7 @@
             this.AnsC.Name = "AnsC";
             this.AnsC.Size = new System.Drawing.Size(476, 43);
             this.AnsC.TabIndex = 3;
-            this.AnsC.Text = "C:";
+            this.AnsC.Text = "3: ";
             this.AnsC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AnsB
@@ -427,7 +427,7 @@
             this.AnsB.Name = "AnsB";
             this.AnsB.Size = new System.Drawing.Size(476, 43);
             this.AnsB.TabIndex = 2;
-            this.AnsB.Text = "B:";
+            this.AnsB.Text = "2: ";
             this.AnsB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AnsA
@@ -439,7 +439,7 @@
             this.AnsA.Name = "AnsA";
             this.AnsA.Size = new System.Drawing.Size(476, 43);
             this.AnsA.TabIndex = 1;
-            this.AnsA.Text = "A:";
+            this.AnsA.Text = "1: ";
             this.AnsA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Question
@@ -450,7 +450,7 @@
             this.Question.Name = "Question";
             this.Question.Size = new System.Drawing.Size(992, 71);
             this.Question.TabIndex = 0;
-            this.Question.Text = "label3";
+            this.Question.Text = "Temp";
             // 
             // InsBox
             // 
@@ -589,7 +589,7 @@
         private System.Windows.Forms.Label OneTwenFiK;
         private System.Windows.Forms.Label TwoFiftK;
         private System.Windows.Forms.Label FivHunK;
-        private System.Windows.Forms.Label mil;
+        private System.Windows.Forms.Label Mil;
         private System.Windows.Forms.GroupBox InsBox;
         private System.Windows.Forms.Label InsLabel;
         private System.Windows.Forms.GroupBox AnsHereGBox;
