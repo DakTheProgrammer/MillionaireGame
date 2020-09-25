@@ -181,7 +181,29 @@ namespace millionaire
 
         private void fiftyfifty_Click(object sender, EventArgs e)
         {
+            if (GameMil.A == GameMil.Answer)
+            {
+                AnsC.ForeColor = Color.Black;
+                AnsD.ForeColor = Color.Black;
+            }
+            else if (GameMil.B == GameMil.Answer)
+            {
+                AnsA.ForeColor = Color.Black;
+                AnsC.ForeColor = Color.Black;
+            }
+            else if (GameMil.C == GameMil.Answer)
+            {
+                AnsA.ForeColor = Color.Black;
+                AnsD.ForeColor = Color.Black;
+            }
+            else
+            {
+                AnsB.ForeColor = Color.Black;
+                AnsC.ForeColor = Color.Black;
+            }
 
+            fiftyfifty.Enabled = false;
+            fiftyfifty.Visible = false;
         }
 
         private void walk_Click(object sender, EventArgs e)
