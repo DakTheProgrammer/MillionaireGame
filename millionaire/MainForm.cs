@@ -208,7 +208,25 @@ namespace millionaire
 
         private void walk_Click(object sender, EventArgs e)
         {
+            string text = "";
+            string temp;
 
+            if (GameMil.Round == 0)
+            {
+                temp = "";
+                text = "$0";
+            }
+            else 
+            {
+                temp = Rounds[GameMil.Round - 1].Text;
+            }
+
+            for (int i = 8; i < temp.Length; i++)
+            {
+                text += temp[i];
+            }
+
+            MessageBox.Show("Congrats you won: " + text);
         }
     }
 }
