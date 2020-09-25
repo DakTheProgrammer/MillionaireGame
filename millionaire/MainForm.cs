@@ -22,7 +22,6 @@ namespace millionaire
         private void MainForm_Load(object sender, EventArgs e)
         {
             GameMil.PromptFile();
-            Question.Text = GameMil.test();
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)

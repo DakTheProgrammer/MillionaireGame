@@ -33,6 +33,8 @@
             this.walk = new System.Windows.Forms.Button();
             this.fiftyfifty = new System.Windows.Forms.Button();
             this.Values = new System.Windows.Forms.GroupBox();
+            this.TwoHun = new System.Windows.Forms.Label();
+            this.OneHun = new System.Windows.Forms.Label();
             this.ThreeHun = new System.Windows.Forms.Label();
             this.FiveHun = new System.Windows.Forms.Label();
             this.OneK = new System.Windows.Forms.Label();
@@ -58,10 +60,8 @@
             this.InsBox = new System.Windows.Forms.GroupBox();
             this.InsLabel = new System.Windows.Forms.Label();
             this.AnsHereGBox = new System.Windows.Forms.GroupBox();
-            this.InputBox = new System.Windows.Forms.TextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
-            this.OneHun = new System.Windows.Forms.Label();
-            this.TwoHun = new System.Windows.Forms.Label();
+            this.InputBox = new System.Windows.Forms.TextBox();
             this.ClockBox = new System.Windows.Forms.GroupBox();
             this.LifelineBox.SuspendLayout();
             this.Values.SuspendLayout();
@@ -145,6 +145,32 @@
             this.Values.TabIndex = 2;
             this.Values.TabStop = false;
             this.Values.Text = "Values";
+            // 
+            // TwoHun
+            // 
+            this.TwoHun.BackColor = System.Drawing.Color.Black;
+            this.TwoHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TwoHun.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.TwoHun.Location = new System.Drawing.Point(8, 362);
+            this.TwoHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TwoHun.Name = "TwoHun";
+            this.TwoHun.Size = new System.Drawing.Size(251, 26);
+            this.TwoHun.TabIndex = 19;
+            this.TwoHun.Text = "  2     $200";
+            this.TwoHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // OneHun
+            // 
+            this.OneHun.BackColor = System.Drawing.Color.Black;
+            this.OneHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OneHun.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.OneHun.Location = new System.Drawing.Point(8, 388);
+            this.OneHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.OneHun.Name = "OneHun";
+            this.OneHun.Size = new System.Drawing.Size(251, 26);
+            this.OneHun.TabIndex = 18;
+            this.OneHun.Text = "  1     $100";
+            this.OneHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ThreeHun
             // 
@@ -463,16 +489,6 @@
             this.AnsHereGBox.TabStop = false;
             this.AnsHereGBox.Text = "Answer Here";
             // 
-            // InputBox
-            // 
-            this.InputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputBox.Location = new System.Drawing.Point(6, 42);
-            this.InputBox.MaxLength = 100;
-            this.InputBox.Name = "InputBox";
-            this.InputBox.Size = new System.Drawing.Size(351, 27);
-            this.InputBox.TabIndex = 2;
-            this.InputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // SubmitButton
             // 
             this.SubmitButton.BackColor = System.Drawing.Color.DodgerBlue;
@@ -487,31 +503,15 @@
             this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
-            // OneHun
+            // InputBox
             // 
-            this.OneHun.BackColor = System.Drawing.Color.Black;
-            this.OneHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OneHun.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.OneHun.Location = new System.Drawing.Point(8, 388);
-            this.OneHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.OneHun.Name = "OneHun";
-            this.OneHun.Size = new System.Drawing.Size(251, 26);
-            this.OneHun.TabIndex = 18;
-            this.OneHun.Text = "  1     $100";
-            this.OneHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TwoHun
-            // 
-            this.TwoHun.BackColor = System.Drawing.Color.Black;
-            this.TwoHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TwoHun.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TwoHun.Location = new System.Drawing.Point(8, 362);
-            this.TwoHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.TwoHun.Name = "TwoHun";
-            this.TwoHun.Size = new System.Drawing.Size(251, 26);
-            this.TwoHun.TabIndex = 19;
-            this.TwoHun.Text = "  2     $200";
-            this.TwoHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InputBox.Location = new System.Drawing.Point(6, 42);
+            this.InputBox.MaxLength = 1;
+            this.InputBox.Name = "InputBox";
+            this.InputBox.Size = new System.Drawing.Size(351, 27);
+            this.InputBox.TabIndex = 2;
+            this.InputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ClockBox
             // 

@@ -78,6 +78,7 @@ namespace millionaire
         {
             return ansA[0];
         }
+
         public void PromptFile()
         {
             // create dialog box enabling user to open file
@@ -124,5 +125,9 @@ namespace millionaire
             } // end if
 
         }
+
+        public string Question
+        { get { return questions[roundIndex]; } }
+
     }
 }
