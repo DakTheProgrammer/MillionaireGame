@@ -137,7 +137,14 @@ namespace millionaire
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            char tester = InputBox.Text[0];
+            try
+            {
+                char tester = InputBox.Text[0];
+            }
+            catch
+            {
+
+            }
 
             if(tester >= 49 && tester <= 52)
             {
