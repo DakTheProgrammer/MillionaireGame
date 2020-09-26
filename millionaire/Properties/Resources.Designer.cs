@@ -111,12 +111,30 @@ namespace millionaire.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream correctanswer {
+            get {
+                return ResourceManager.GetStream("correctanswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap file4background {
             get {
                 object obj = ResourceManager.GetObject("file4background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream lets_play {
+            get {
+                return ResourceManager.GetStream("lets_play", resourceCulture);
             }
         }
         
@@ -157,6 +175,15 @@ namespace millionaire.Properties {
             get {
                 object obj = ResourceManager.GetObject("who-wants-to-be-a-millionaire-template-1-728", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream wrong_answer {
+            get {
+                return ResourceManager.GetStream("wrong_answer", resourceCulture);
             }
         }
     }

@@ -22,10 +22,9 @@ namespace millionaire
 
         int counter = 30;
 
-       // System.Media.SoundPlayer GoodAnsSound = new System.Media.SoundPlayer(@"lets_play.mp3");
-        //System.Media.SoundPlayer BadAnsSound = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-        //System.Media.SoundPlayer StartSound = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-        //player.Play();
+        SoundPlayer StartAudio = new SoundPlayer(Properties.Resources.lets_play);
+        SoundPlayer CorAudio = new SoundPlayer(Properties.Resources.correctanswer);
+        SoundPlayer InCortAudio = new SoundPlayer(Properties.Resources.wrong_answer);
 
         private void PlayAgain()
         {
@@ -36,6 +35,7 @@ namespace millionaire
 
         private void correct()
         {
+            CorAudio.Play();
             if (GameMil.Round == 14)
             {
                 Time.Stop();
@@ -87,6 +87,7 @@ namespace millionaire
 
         private void incorrect()
         {
+            InCortAudio.Play();
             Time.Stop();
 
             AnsA.BackColor = Color.Red;
@@ -135,7 +136,7 @@ namespace millionaire
             bool check = false;
             GameMil.PromptFile(ref check);
 
-            //GoodAnsSound.Play();
+            StartAudio.Play();
 
             if (check)
             {
