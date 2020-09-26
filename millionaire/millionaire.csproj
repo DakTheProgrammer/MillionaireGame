@@ -120,5 +120,9 @@
   <ItemGroup>
     <None Include="Resources\wrong answer.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\QnA.txt" />
+    <Content Include="Resources\QnA2.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
