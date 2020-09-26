@@ -86,7 +86,7 @@ namespace millionaire
             roundIndex++;
         }
 
-        public void PromptFile(ref bool bad)
+        public void PromptFile(bool bad)
         {
             // create dialog box enabling user to open file
             OpenFileDialog fileChooser = new OpenFileDialog();

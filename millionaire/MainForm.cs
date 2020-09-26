@@ -134,7 +134,7 @@ namespace millionaire
         private void MainForm_Load(object sender, EventArgs e)
         {
             bool check = false;
-            GameMil.PromptFile(ref check);
+            GameMil.PromptFile(check);
 
             StartAudio.Play();
 
