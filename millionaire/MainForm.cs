@@ -22,8 +22,6 @@ namespace millionaire
 
         int counter = 30;
 
-        //System.IO.Stream str = Properties.Resources.correct_answer;
-
        // System.Media.SoundPlayer GoodAnsSound = new System.Media.SoundPlayer(@"lets_play.mp3");
         //System.Media.SoundPlayer BadAnsSound = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
         //System.Media.SoundPlayer StartSound = new System.Media.SoundPlayer(@"c:\mywavfile.wav");

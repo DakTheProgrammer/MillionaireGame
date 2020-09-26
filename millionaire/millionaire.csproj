@@ -112,9 +112,13 @@
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\correct answer.wav" />
-    <Content Include="Resources\lets play.wav" />
-    <Content Include="Resources\wrong answer.wav" />
+    <None Include="Resources\correctanswer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lets play.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong answer.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

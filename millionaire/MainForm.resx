@@ -117,10 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="correctanswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\correctanswer.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="InsLabel.Text" xml:space="preserve">
     <value>Welcome to Who Wants To Be A Millionaire! Once the game starts you will have 30 seconds to answer each question by putting your answer in the textbox to the left and hitting submit. You will play 15 rounds until you get a question wrong or when you walk away keeping all the money that you have earned until that point. There are also "Safe havens " at rounds 1, 5, 10 which will guarantee you that money if you get an answer wrong after that point. If a question seems too hard to answer you have been allocated one lifeline called "50:50" which will make it so that two of the incorrect answers will be removed as choices. Good luck and have fun on Who Wants To Be A Millionaire!</value>
   </data>
-  <metadata name="Time.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="lets play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\lets play.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Time.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>8, 11</value>
-  </metadata>
+  </data>
+  <data name="wrong answer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\wrong answer.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
