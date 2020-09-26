@@ -109,7 +109,7 @@ namespace millionaire
             }
             else
             {
-                AnsD.BackColor = Color.Red;
+                AnsD.BackColor = Color.Green;
             }
 
             string temp = "Oh thats the wrong answer you will be leaving today with: $" + safe + "\nPlay again?";
