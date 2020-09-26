@@ -42,9 +42,16 @@ namespace millionaire
             }
             else
             {
+                InputBox.Text = "";
+
                 safe = GameMil.Round == 0 ? 100 : safe;
                 safe = GameMil.Round == 4 ? 1000 : safe;
                 safe = GameMil.Round == 9 ? 32000 : safe;
+
+                AnsA.ForeColor = Color.White;
+                AnsB.ForeColor = Color.White;
+                AnsC.ForeColor = Color.White;
+                AnsD.ForeColor = Color.White;
 
                 Rounds[GameMil.Round].BackColor = Color.Black;
 
