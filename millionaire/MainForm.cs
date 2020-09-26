@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,8 +14,12 @@ namespace millionaire
     public partial class MainForm : Form
     {
         Game GameMil = new Game();
+        
         Label[] Rounds;
+        
         int safe = 0;
+
+        int counter = 30;
 
         private void PlayAgain()
         {
@@ -42,6 +47,11 @@ namespace millionaire
             }
             else
             {
+                Time.Stop();
+                MessageBox.Show("That was correct!");
+                counter = 30;
+                Time.Start();
+
                 InputBox.Text = "";
 
                 safe = GameMil.Round == 0 ? 100 : safe;
@@ -54,11 +64,6 @@ namespace millionaire
                 AnsD.ForeColor = Color.White;
 
                 Rounds[GameMil.Round].BackColor = Color.Black;
-
-                AnsA.BackColor = Color.Black;
-                AnsB.BackColor = Color.Black;
-                AnsC.BackColor = Color.Black;
-                AnsD.BackColor = Color.Black;
 
                 GameMil.incRound();
                 
@@ -126,6 +131,12 @@ namespace millionaire
                 Close();
             }
 
+            Time = new System.Windows.Forms.Timer();
+            Time.Tick += new EventHandler(Time_Tick);
+            Time.Interval = 1000; // 1 second
+            Time.Start();
+            TimerLabel.Text = counter.ToString();
+
             Rounds = new Label[] { OneHun, TwoHun, ThreeHun, 
                 FiveHun, OneK, TwoK, FourK, EightK, SixteenK, 
                 ThirTwoK, SixFourK, OneTwenFiK, TwoFiftK, 
@@ -155,11 +166,6 @@ namespace millionaire
                     {
                         if (GameMil.A == GameMil.Answer)
                         {
-                            AnsA.BackColor = Color.Green;
-                            AnsB.BackColor = Color.Red;
-                            AnsC.BackColor = Color.Red;
-                            AnsD.BackColor = Color.Red;
-
                             correct();
                         }
                         else
@@ -171,11 +177,6 @@ namespace millionaire
                     {
                         if (GameMil.B == GameMil.Answer)
                         {
-                            AnsB.BackColor = Color.Green;
-                            AnsA.BackColor = Color.Red;
-                            AnsC.BackColor = Color.Red;
-                            AnsD.BackColor = Color.Red;
-
                             correct();
                         }
                         else
@@ -187,11 +188,6 @@ namespace millionaire
                     {
                         if (GameMil.C == GameMil.Answer)
                         {
-                            AnsC.BackColor = Color.Green;
-                            AnsB.BackColor = Color.Red;
-                            AnsA.BackColor = Color.Red;
-                            AnsD.BackColor = Color.Red;
-
                             correct();
                         }
                         else
@@ -203,11 +199,6 @@ namespace millionaire
                     {
                         if (GameMil.D == GameMil.Answer)
                         {
-                            AnsD.BackColor = Color.Green;
-                            AnsB.BackColor = Color.Red;
-                            AnsC.BackColor = Color.Red;
-                            AnsA.BackColor = Color.Red;
-
                             correct();
                         }
                         else
@@ -289,6 +280,18 @@ namespace millionaire
                 Close();
             }
 
+        }
+
+        private void Time_Tick(object sender, EventArgs e)
+        {
+            counter--;
+            if (counter == 0)
+            {
+                Time.Stop();
+                incorrect();
+            }
+            
+            TimerLabel.Text = counter.ToString();
         }
     }
 }

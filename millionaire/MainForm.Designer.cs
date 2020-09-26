@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.LifelineBox = new System.Windows.Forms.GroupBox();
             this.walk = new System.Windows.Forms.Button();
@@ -63,6 +64,7 @@
             this.SubmitButton = new System.Windows.Forms.Button();
             this.InputBox = new System.Windows.Forms.TextBox();
             this.ClockBox = new System.Windows.Forms.GroupBox();
+            this.Time = new System.Windows.Forms.Timer(this.components);
             this.LifelineBox.SuspendLayout();
             this.Values.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoMil)).BeginInit();
@@ -529,6 +531,10 @@
             this.ClockBox.TabStop = false;
             this.ClockBox.Text = "Timer";
             // 
+            // Time
+            // 
+            this.Time.Tick += new System.EventHandler(this.Time_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -599,6 +605,7 @@
         private System.Windows.Forms.Label TwoHun;
         private System.Windows.Forms.Label OneHun;
         private System.Windows.Forms.GroupBox ClockBox;
+        private System.Windows.Forms.Timer Time;
     }
 }
 
