@@ -86,7 +86,7 @@ namespace millionaire
             roundIndex++;
         }
 
-        public void PromptFile()
+        public void PromptFile(ref bool bad)
         {
             // create dialog box enabling user to open file
             OpenFileDialog fileChooser = new OpenFileDialog();
@@ -129,8 +129,11 @@ namespace millionaire
                    "File does not exist", "File Error",
                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            } // end if
-
+            } 
+            else
+            {
+                bad = true;
+            }
         }
 
         public string Question

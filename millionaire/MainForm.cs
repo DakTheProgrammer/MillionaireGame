@@ -118,7 +118,13 @@ namespace millionaire
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            GameMil.PromptFile();
+            bool check = false;
+            GameMil.PromptFile(ref check);
+
+            if (check)
+            {
+                Close();
+            }
 
             Rounds = new Label[] { OneHun, TwoHun, ThreeHun, 
                 FiveHun, OneK, TwoK, FourK, EightK, SixteenK, 
