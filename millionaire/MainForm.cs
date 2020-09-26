@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,6 +22,13 @@ namespace millionaire
 
         int counter = 30;
 
+        //System.IO.Stream str = Properties.Resources.correct_answer;
+
+       // System.Media.SoundPlayer GoodAnsSound = new System.Media.SoundPlayer(@"lets_play.mp3");
+        //System.Media.SoundPlayer BadAnsSound = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
+        //System.Media.SoundPlayer StartSound = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
+        //player.Play();
+
         private void PlayAgain()
         {
             MainForm NewForm = new MainForm();
@@ -32,6 +40,7 @@ namespace millionaire
         {
             if (GameMil.Round == 14)
             {
+                Time.Stop();
                 string temp = "CONGRATS YOU WON 1 MILLION DOLLARS!!\nPlay again?";
 
                 DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -80,6 +89,8 @@ namespace millionaire
 
         private void incorrect()
         {
+            Time.Stop();
+
             AnsA.BackColor = Color.Red;
             AnsB.BackColor = Color.Red;
             AnsC.BackColor = Color.Red;
@@ -125,6 +136,8 @@ namespace millionaire
         {
             bool check = false;
             GameMil.PromptFile(ref check);
+
+            //GoodAnsSound.Play();
 
             if (check)
             {
