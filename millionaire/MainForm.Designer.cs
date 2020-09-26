@@ -520,13 +520,13 @@
             // 
             this.ClockBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClockBox.Controls.Add(this.Timer);
-            this.ClockBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClockBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClockBox.ForeColor = System.Drawing.SystemColors.Control;
             this.ClockBox.Location = new System.Drawing.Point(13, 303);
             this.ClockBox.Margin = new System.Windows.Forms.Padding(4);
             this.ClockBox.Name = "ClockBox";
             this.ClockBox.Padding = new System.Windows.Forms.Padding(4);
-            this.ClockBox.Size = new System.Drawing.Size(267, 133);
+            this.ClockBox.Size = new System.Drawing.Size(267, 135);
             this.ClockBox.TabIndex = 2;
             this.ClockBox.TabStop = false;
             this.ClockBox.Text = "Timer";

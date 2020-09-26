@@ -101,11 +101,11 @@ namespace millionaire
             }
             else if (GameMil.B == GameMil.Answer)
             {
-                AnsA.BackColor = Color.Green;
+                AnsB.BackColor = Color.Green;
             }
             else if (GameMil.C == GameMil.Answer)
             {
-                AnsA.BackColor = Color.Green;
+                AnsC.BackColor = Color.Green;
             }
             else
             {
