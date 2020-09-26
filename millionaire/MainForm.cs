@@ -97,7 +97,7 @@ namespace millionaire
                 AnsD.BackColor = Color.Red;
             }
 
-            string temp = "Oh thats the wrong answer you will be leaving today with: $" + safe + "\nPlay again?";
+            string temp = "Oh thats the wrong answer you will be leaving today with: " + safe + "$\nPlay again?";
 
             DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -140,83 +140,83 @@ namespace millionaire
             try
             {
                 char tester = InputBox.Text[0];
+            }
+            catch
+            {
 
-                if (tester >= 49 && tester <= 52)
+            }
+
+            if(tester >= 49 && tester <= 52)
+            {
+                int ans = Convert.ToInt32(tester);
+                ans -= 48;
+
+                if(ans == 1)
                 {
-                    int ans = Convert.ToInt32(tester);
-                    ans -= 48;
-
-                    if (ans == 1)
+                    if(GameMil.A == GameMil.Answer)
                     {
-                        if (GameMil.A == GameMil.Answer)
-                        {
-                            AnsA.BackColor = Color.Green;
-                            AnsB.BackColor = Color.Red;
-                            AnsC.BackColor = Color.Red;
-                            AnsD.BackColor = Color.Red;
+                        AnsA.BackColor = Color.Green;
+                        AnsB.BackColor = Color.Red;
+                        AnsC.BackColor = Color.Red;
+                        AnsD.BackColor = Color.Red;
 
-                            correct();
-                        }
-                        else
-                        {
-                            incorrect();
-                        }
-                    }
-                    else if (ans == 2)
-                    {
-                        if (GameMil.B == GameMil.Answer)
-                        {
-                            AnsB.BackColor = Color.Green;
-                            AnsA.BackColor = Color.Red;
-                            AnsC.BackColor = Color.Red;
-                            AnsD.BackColor = Color.Red;
-
-                            correct();
-                        }
-                        else
-                        {
-                            incorrect();
-                        }
-                    }
-                    else if (ans == 3)
-                    {
-                        if (GameMil.C == GameMil.Answer)
-                        {
-                            AnsC.BackColor = Color.Green;
-                            AnsB.BackColor = Color.Red;
-                            AnsA.BackColor = Color.Red;
-                            AnsD.BackColor = Color.Red;
-
-                            correct();
-                        }
-                        else
-                        {
-                            incorrect();
-                        }
+                        correct();
                     }
                     else
                     {
-                        if (GameMil.D == GameMil.Answer)
-                        {
-                            AnsD.BackColor = Color.Green;
-                            AnsB.BackColor = Color.Red;
-                            AnsC.BackColor = Color.Red;
-                            AnsA.BackColor = Color.Red;
+                        incorrect();
+                    }
+                }
+                else if(ans == 2)
+                {
+                    if (GameMil.B == GameMil.Answer)
+                    {
+                        AnsB.BackColor = Color.Green;
+                        AnsA.BackColor = Color.Red;
+                        AnsC.BackColor = Color.Red;
+                        AnsD.BackColor = Color.Red;
 
-                            correct();
-                        }
-                        else
-                        {
-                            incorrect();
-                        }
+                        correct();
+                    }
+                    else
+                    {
+                        incorrect();
+                    }
+                }
+                else if (ans == 3)
+                {
+                    if (GameMil.C == GameMil.Answer)
+                    {
+                        AnsC.BackColor = Color.Green;
+                        AnsB.BackColor = Color.Red;
+                        AnsA.BackColor = Color.Red;
+                        AnsD.BackColor = Color.Red;
+
+                        correct();
+                    }
+                    else
+                    {
+                        incorrect();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Not a proper choice try agan!");
+                    if (GameMil.D == GameMil.Answer)
+                    {
+                        AnsD.BackColor = Color.Green;
+                        AnsB.BackColor = Color.Red;
+                        AnsC.BackColor = Color.Red;
+                        AnsA.BackColor = Color.Red;
+
+                        correct();
+                    }
+                    else
+                    {
+                        incorrect();
+                    }
                 }
             }
-            catch
+            else
             {
                 MessageBox.Show("Not a proper choice try agan!");
             }
