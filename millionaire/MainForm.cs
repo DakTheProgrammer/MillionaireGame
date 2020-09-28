@@ -360,7 +360,7 @@ namespace millionaire
             {
                 text += temp[i];
             }
-
+            Time.Stop();//stops time when end game
             temp = "Congrats you won: " + text + "\nPlay again?";
 
 
