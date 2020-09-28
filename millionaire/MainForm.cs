@@ -37,6 +37,7 @@ namespace millionaire
         SoundPlayer StartAudio = new SoundPlayer(Properties.Resources.lets_play);
         SoundPlayer CorAudio = new SoundPlayer(Properties.Resources.correctanswer);
         SoundPlayer InCortAudio = new SoundPlayer(Properties.Resources.wrong_answer);
+        // Gets all of the audio files for the program
 
         /*
          *          Method Name: PlayAgain
@@ -46,8 +47,8 @@ namespace millionaire
         private void PlayAgain()
         {
             MainForm NewForm = new MainForm();
-            NewForm.Show();
-            this.Dispose(false);
+            NewForm.Show(); 
+            this.Dispose(false);    //deletes old form
         }
 
         /*
@@ -59,13 +60,14 @@ namespace millionaire
          */
         private void correct()
         {
-            CorAudio.Play();
+            CorAudio.Play();    //plays correct sound
             if (GameMil.Round == 14)
             {
-                Time.Stop();
+                Time.Stop();    //stops timer when user get a prompt
                 string temp = "CONGRATS YOU WON 1 MILLION DOLLARS!!\nPlay again?";
 
                 DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                //message box for the new game and when they win
 
                 if (YorN == DialogResult.Yes)
                 {
@@ -78,27 +80,30 @@ namespace millionaire
             }
             else
             {
-                Time.Stop();
-                MessageBox.Show("That was correct!");
+                Time.Stop();    //stops timer when prompted
+                MessageBox.Show("That was correct!");   //prompts correct answer
                 counter = 30;
-                Time.Start();
+                Time.Start(); //restarts timer 
 
                 InputBox.Text = "";
 
                 safe = GameMil.Round == 0 ? 100 : safe;
                 safe = GameMil.Round == 4 ? 1000 : safe;
                 safe = GameMil.Round == 9 ? 32000 : safe;
+                //stores all of the sagehavens
 
                 AnsA.ForeColor = Color.White;
                 AnsB.ForeColor = Color.White;
                 AnsC.ForeColor = Color.White;
                 AnsD.ForeColor = Color.White;
+                //resets color of words incase 5050 was used prior
 
                 Rounds[GameMil.Round].BackColor = Color.Black;
 
-                GameMil.incRound();
+                GameMil.incRound();//round incrementing
                 
                 Rounds[GameMil.Round].BackColor = Color.Orange;
+                //highlights new round
 
                 Question.Text = GameMil.Question;
 
@@ -106,6 +111,7 @@ namespace millionaire
                 AnsB.Text = "2: " + GameMil.B;
                 AnsC.Text = "3: " + GameMil.C;
                 AnsD.Text = "4: " + GameMil.D;
+                //new questions
             }
         }
 
@@ -117,15 +123,23 @@ namespace millionaire
          */
         private void incorrect()
         {
-            InCortAudio.Play();
-            Time.Stop();
+            InCortAudio.Play();    //plays incorrect noise
+            Time.Stop();    //stops timer on wrong answer
 
             AnsA.BackColor = Color.Red;
             AnsB.BackColor = Color.Red;
             AnsC.BackColor = Color.Red;
             AnsD.BackColor = Color.Red;
+            //shows wrong answer
 
-            if(GameMil.A == GameMil.Answer)
+            AnsA.ForeColor = Color.White;
+            AnsB.ForeColor = Color.White;
+            AnsC.ForeColor = Color.White;
+            AnsD.ForeColor = Color.White;
+            //just to make sure all pretty if 5050 used
+
+            //show correct answer
+            if (GameMil.A == GameMil.Answer)
             {
                 AnsA.BackColor = Color.Green;
             }
@@ -143,9 +157,11 @@ namespace millionaire
             }
 
             string temp = "Oh thats the wrong answer you will be leaving today with: $" + safe + "\nPlay again?";
+            //prompts with amount won and asks to play again
 
             DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            //plays again if user wants
             if (YorN == DialogResult.Yes)
             {
                 PlayAgain();
@@ -156,6 +172,10 @@ namespace millionaire
             }
         }
 
+        /*
+         *          Method Name: MainForm
+         *          Purpose: Initializes components
+         */
         public MainForm()
         {
             InitializeComponent();
@@ -167,14 +187,16 @@ namespace millionaire
          *          the Time variable gets initialized to 1 second 
          *          and is started, the Rounds array gets initialized,
          *          Ans lables get initialized, Rounds background color
-         *          changes to orange.
+         *          changes to orange. Also checks if form needs to be
+         *          closed due to file error
          */
         private void MainForm_Load(object sender, EventArgs e)
         {
             bool check = false;
-            GameMil.PromptFile(check);
+            GameMil.PromptFile(ref check);
 
             StartAudio.Play();
+            //audio call for the start of game
 
             if (check)
             {
@@ -211,9 +233,11 @@ namespace millionaire
          */
         private void SubmitButton_Click(object sender, EventArgs e)
         {
+            //tests if box is empty
             try
             {
                 char tester = InputBox.Text[0];
+                //checks if valid answer choice
                 if (tester >= 49 && tester <= 52)
                 {
                     int ans = Convert.ToInt32(tester);
@@ -283,6 +307,7 @@ namespace millionaire
          */
         private void fiftyfifty_Click(object sender, EventArgs e)
         {
+            //shows two answers choices with one correct
             if (GameMil.A == GameMil.Answer)
             {
                 AnsC.ForeColor = Color.Black;
@@ -306,10 +331,11 @@ namespace millionaire
 
             fiftyfifty.Enabled = false;
             fiftyfifty.Visible = false;
+            //disasbles button and makes it disapear
         }
 
         /*
-         *      Method Name: walk
+         *      Method Name: walk_Click
          *      Purpose: Button component that allows the user to quit
          *      the game at any point and prints out the total value of
          *      money that the user had won.
@@ -319,6 +345,7 @@ namespace millionaire
             string text = "";
             string temp;
 
+            //used for display amounts
             if (GameMil.Round == 0)
             {
                 temp = "";
@@ -337,7 +364,7 @@ namespace millionaire
             temp = "Congrats you won: " + text + "\nPlay again?";
 
 
-
+            //message box that shows result and to play again
             DialogResult YorN = MessageBox.Show(temp, "Play again?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if(YorN == DialogResult.Yes)
@@ -357,14 +384,15 @@ namespace millionaire
          */
         private void Time_Tick(object sender, EventArgs e)
         {
+            //reduces diplay each timer tick
             counter--;
             if (counter == 0)
             {
-                Time.Stop();
+                Time.Stop();    //used so doesnt go down to -
                 incorrect();
             }
             
-            TimerLabel.Text = counter.ToString();
+            TimerLabel.Text = counter.ToString();   //lable with timer
         }
     }
 }

@@ -82,11 +82,9 @@
             this.LifelineBox.Controls.Add(this.fiftyfifty);
             this.LifelineBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LifelineBox.ForeColor = System.Drawing.SystemColors.Control;
-            this.LifelineBox.Location = new System.Drawing.Point(13, 13);
-            this.LifelineBox.Margin = new System.Windows.Forms.Padding(4);
+            this.LifelineBox.Location = new System.Drawing.Point(10, 11);
             this.LifelineBox.Name = "LifelineBox";
-            this.LifelineBox.Padding = new System.Windows.Forms.Padding(4);
-            this.LifelineBox.Size = new System.Drawing.Size(267, 290);
+            this.LifelineBox.Size = new System.Drawing.Size(200, 236);
             this.LifelineBox.TabIndex = 1;
             this.LifelineBox.TabStop = false;
             this.LifelineBox.Text = "Lifelines";
@@ -97,10 +95,10 @@
             this.walk.BackgroundImage = global::millionaire.Properties.Resources.WalkAway;
             this.walk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.walk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.walk.Location = new System.Drawing.Point(41, 165);
+            this.walk.Location = new System.Drawing.Point(31, 134);
             this.walk.Margin = new System.Windows.Forms.Padding(0);
             this.walk.Name = "walk";
-            this.walk.Size = new System.Drawing.Size(177, 112);
+            this.walk.Size = new System.Drawing.Size(133, 91);
             this.walk.TabIndex = 1;
             this.walk.UseVisualStyleBackColor = false;
             this.walk.Click += new System.EventHandler(this.walk_Click);
@@ -111,10 +109,10 @@
             this.fiftyfifty.BackgroundImage = global::millionaire.Properties.Resources._5050;
             this.fiftyfifty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.fiftyfifty.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.fiftyfifty.Location = new System.Drawing.Point(41, 37);
+            this.fiftyfifty.Location = new System.Drawing.Point(31, 30);
             this.fiftyfifty.Margin = new System.Windows.Forms.Padding(0);
             this.fiftyfifty.Name = "fiftyfifty";
-            this.fiftyfifty.Size = new System.Drawing.Size(177, 111);
+            this.fiftyfifty.Size = new System.Drawing.Size(133, 90);
             this.fiftyfifty.TabIndex = 0;
             this.fiftyfifty.UseVisualStyleBackColor = false;
             this.fiftyfifty.Click += new System.EventHandler(this.fiftyfifty_Click);
@@ -139,11 +137,9 @@
             this.Values.Controls.Add(this.Mil);
             this.Values.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Values.ForeColor = System.Drawing.SystemColors.Control;
-            this.Values.Location = new System.Drawing.Point(1004, 15);
-            this.Values.Margin = new System.Windows.Forms.Padding(4);
+            this.Values.Location = new System.Drawing.Point(753, 12);
             this.Values.Name = "Values";
-            this.Values.Padding = new System.Windows.Forms.Padding(4);
-            this.Values.Size = new System.Drawing.Size(267, 421);
+            this.Values.Size = new System.Drawing.Size(200, 342);
             this.Values.TabIndex = 2;
             this.Values.TabStop = false;
             this.Values.Text = "Values";
@@ -153,10 +149,9 @@
             this.TwoHun.BackColor = System.Drawing.Color.Black;
             this.TwoHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TwoHun.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TwoHun.Location = new System.Drawing.Point(8, 362);
-            this.TwoHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TwoHun.Location = new System.Drawing.Point(6, 294);
             this.TwoHun.Name = "TwoHun";
-            this.TwoHun.Size = new System.Drawing.Size(251, 26);
+            this.TwoHun.Size = new System.Drawing.Size(188, 21);
             this.TwoHun.TabIndex = 19;
             this.TwoHun.Text = "  2     $200";
             this.TwoHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,10 +161,9 @@
             this.OneHun.BackColor = System.Drawing.Color.Black;
             this.OneHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OneHun.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.OneHun.Location = new System.Drawing.Point(8, 388);
-            this.OneHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.OneHun.Location = new System.Drawing.Point(6, 315);
             this.OneHun.Name = "OneHun";
-            this.OneHun.Size = new System.Drawing.Size(251, 26);
+            this.OneHun.Size = new System.Drawing.Size(188, 21);
             this.OneHun.TabIndex = 18;
             this.OneHun.Text = "  1     $100";
             this.OneHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -179,10 +173,9 @@
             this.ThreeHun.BackColor = System.Drawing.Color.Black;
             this.ThreeHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThreeHun.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ThreeHun.Location = new System.Drawing.Point(8, 338);
-            this.ThreeHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ThreeHun.Location = new System.Drawing.Point(6, 275);
             this.ThreeHun.Name = "ThreeHun";
-            this.ThreeHun.Size = new System.Drawing.Size(251, 26);
+            this.ThreeHun.Size = new System.Drawing.Size(188, 21);
             this.ThreeHun.TabIndex = 17;
             this.ThreeHun.Text = "  3     $300";
             this.ThreeHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -192,10 +185,9 @@
             this.FiveHun.BackColor = System.Drawing.Color.Black;
             this.FiveHun.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FiveHun.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FiveHun.Location = new System.Drawing.Point(8, 313);
-            this.FiveHun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.FiveHun.Location = new System.Drawing.Point(6, 254);
             this.FiveHun.Name = "FiveHun";
-            this.FiveHun.Size = new System.Drawing.Size(251, 26);
+            this.FiveHun.Size = new System.Drawing.Size(188, 21);
             this.FiveHun.TabIndex = 16;
             this.FiveHun.Text = "  4     $500";
             this.FiveHun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -205,10 +197,9 @@
             this.OneK.BackColor = System.Drawing.Color.Black;
             this.OneK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OneK.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.OneK.Location = new System.Drawing.Point(8, 287);
-            this.OneK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.OneK.Location = new System.Drawing.Point(6, 233);
             this.OneK.Name = "OneK";
-            this.OneK.Size = new System.Drawing.Size(251, 26);
+            this.OneK.Size = new System.Drawing.Size(188, 21);
             this.OneK.TabIndex = 15;
             this.OneK.Text = "  5     $1,000";
             this.OneK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,10 +209,9 @@
             this.SixteenK.BackColor = System.Drawing.Color.Black;
             this.SixteenK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SixteenK.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.SixteenK.Location = new System.Drawing.Point(8, 183);
-            this.SixteenK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SixteenK.Location = new System.Drawing.Point(6, 149);
             this.SixteenK.Name = "SixteenK";
-            this.SixteenK.Size = new System.Drawing.Size(251, 26);
+            this.SixteenK.Size = new System.Drawing.Size(188, 21);
             this.SixteenK.TabIndex = 15;
             this.SixteenK.Text = "  9     $16,000";
             this.SixteenK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,10 +221,9 @@
             this.TwoK.BackColor = System.Drawing.Color.Black;
             this.TwoK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TwoK.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TwoK.Location = new System.Drawing.Point(8, 262);
-            this.TwoK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TwoK.Location = new System.Drawing.Point(6, 213);
             this.TwoK.Name = "TwoK";
-            this.TwoK.Size = new System.Drawing.Size(251, 26);
+            this.TwoK.Size = new System.Drawing.Size(188, 21);
             this.TwoK.TabIndex = 14;
             this.TwoK.Text = "  6     $2,000";
             this.TwoK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -244,10 +233,9 @@
             this.FourK.BackColor = System.Drawing.Color.Black;
             this.FourK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FourK.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FourK.Location = new System.Drawing.Point(8, 236);
-            this.FourK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.FourK.Location = new System.Drawing.Point(6, 192);
             this.FourK.Name = "FourK";
-            this.FourK.Size = new System.Drawing.Size(251, 26);
+            this.FourK.Size = new System.Drawing.Size(188, 21);
             this.FourK.TabIndex = 13;
             this.FourK.Text = "  7     $4,000";
             this.FourK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -257,10 +245,9 @@
             this.EightK.BackColor = System.Drawing.Color.Black;
             this.EightK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EightK.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.EightK.Location = new System.Drawing.Point(8, 210);
-            this.EightK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.EightK.Location = new System.Drawing.Point(6, 171);
             this.EightK.Name = "EightK";
-            this.EightK.Size = new System.Drawing.Size(251, 26);
+            this.EightK.Size = new System.Drawing.Size(188, 21);
             this.EightK.TabIndex = 12;
             this.EightK.Text = "  8     $8,000";
             this.EightK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -270,10 +257,9 @@
             this.ThirTwoK.BackColor = System.Drawing.Color.Black;
             this.ThirTwoK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThirTwoK.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.ThirTwoK.Location = new System.Drawing.Point(8, 159);
-            this.ThirTwoK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ThirTwoK.Location = new System.Drawing.Point(6, 129);
             this.ThirTwoK.Name = "ThirTwoK";
-            this.ThirTwoK.Size = new System.Drawing.Size(251, 26);
+            this.ThirTwoK.Size = new System.Drawing.Size(188, 21);
             this.ThirTwoK.TabIndex = 10;
             this.ThirTwoK.Text = "10     $32,000";
             this.ThirTwoK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,10 +269,9 @@
             this.SixFourK.BackColor = System.Drawing.Color.Black;
             this.SixFourK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SixFourK.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.SixFourK.Location = new System.Drawing.Point(8, 137);
-            this.SixFourK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SixFourK.Location = new System.Drawing.Point(6, 111);
             this.SixFourK.Name = "SixFourK";
-            this.SixFourK.Size = new System.Drawing.Size(251, 26);
+            this.SixFourK.Size = new System.Drawing.Size(188, 21);
             this.SixFourK.TabIndex = 9;
             this.SixFourK.Text = "11     $64,000";
             this.SixFourK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -296,10 +281,9 @@
             this.OneTwenFiK.BackColor = System.Drawing.Color.Black;
             this.OneTwenFiK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OneTwenFiK.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.OneTwenFiK.Location = new System.Drawing.Point(8, 111);
-            this.OneTwenFiK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.OneTwenFiK.Location = new System.Drawing.Point(6, 90);
             this.OneTwenFiK.Name = "OneTwenFiK";
-            this.OneTwenFiK.Size = new System.Drawing.Size(251, 26);
+            this.OneTwenFiK.Size = new System.Drawing.Size(188, 21);
             this.OneTwenFiK.TabIndex = 8;
             this.OneTwenFiK.Text = "12     $125,000";
             this.OneTwenFiK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -309,10 +293,9 @@
             this.TwoFiftK.BackColor = System.Drawing.Color.Black;
             this.TwoFiftK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TwoFiftK.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TwoFiftK.Location = new System.Drawing.Point(8, 85);
-            this.TwoFiftK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TwoFiftK.Location = new System.Drawing.Point(6, 69);
             this.TwoFiftK.Name = "TwoFiftK";
-            this.TwoFiftK.Size = new System.Drawing.Size(251, 26);
+            this.TwoFiftK.Size = new System.Drawing.Size(188, 21);
             this.TwoFiftK.TabIndex = 7;
             this.TwoFiftK.Text = "13     $250,000";
             this.TwoFiftK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -322,10 +305,9 @@
             this.FivHunK.BackColor = System.Drawing.Color.Black;
             this.FivHunK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FivHunK.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FivHunK.Location = new System.Drawing.Point(8, 59);
-            this.FivHunK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.FivHunK.Location = new System.Drawing.Point(6, 48);
             this.FivHunK.Name = "FivHunK";
-            this.FivHunK.Size = new System.Drawing.Size(251, 26);
+            this.FivHunK.Size = new System.Drawing.Size(188, 21);
             this.FivHunK.TabIndex = 6;
             this.FivHunK.Text = "14     $500,000";
             this.FivHunK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,10 +317,9 @@
             this.Mil.BackColor = System.Drawing.Color.Black;
             this.Mil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mil.ForeColor = System.Drawing.SystemColors.Control;
-            this.Mil.Location = new System.Drawing.Point(8, 33);
-            this.Mil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Mil.Location = new System.Drawing.Point(6, 27);
             this.Mil.Name = "Mil";
-            this.Mil.Size = new System.Drawing.Size(251, 26);
+            this.Mil.Size = new System.Drawing.Size(188, 21);
             this.Mil.TabIndex = 5;
             this.Mil.Text = "15     $1 MILLION";
             this.Mil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -348,10 +329,9 @@
             this.LogoMil.BackColor = System.Drawing.Color.Transparent;
             this.LogoMil.BackgroundImage = global::millionaire.Properties.Resources.logo;
             this.LogoMil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogoMil.Location = new System.Drawing.Point(291, 15);
-            this.LogoMil.Margin = new System.Windows.Forms.Padding(4);
+            this.LogoMil.Location = new System.Drawing.Point(218, 12);
             this.LogoMil.Name = "LogoMil";
-            this.LogoMil.Size = new System.Drawing.Size(363, 284);
+            this.LogoMil.Size = new System.Drawing.Size(272, 231);
             this.LogoMil.TabIndex = 4;
             this.LogoMil.TabStop = false;
             // 
@@ -360,10 +340,9 @@
             this.Timer.BackgroundImage = global::millionaire.Properties.Resources.Timer;
             this.Timer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Timer.Controls.Add(this.TimerLabel);
-            this.Timer.Location = new System.Drawing.Point(76, 28);
-            this.Timer.Margin = new System.Windows.Forms.Padding(4);
+            this.Timer.Location = new System.Drawing.Point(57, 23);
             this.Timer.Name = "Timer";
-            this.Timer.Size = new System.Drawing.Size(107, 96);
+            this.Timer.Size = new System.Drawing.Size(80, 78);
             this.Timer.TabIndex = 3;
             // 
             // TimerLabel
@@ -371,10 +350,9 @@
             this.TimerLabel.AutoSize = true;
             this.TimerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimerLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TimerLabel.Location = new System.Drawing.Point(29, 28);
-            this.TimerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TimerLabel.Location = new System.Drawing.Point(22, 23);
             this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(51, 36);
+            this.TimerLabel.Size = new System.Drawing.Size(41, 29);
             this.TimerLabel.TabIndex = 0;
             this.TimerLabel.Text = "30";
             // 
@@ -390,20 +368,18 @@
             this.QuestionNAnswer.Controls.Add(this.AnsA);
             this.QuestionNAnswer.Controls.Add(this.Question);
             this.QuestionNAnswer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.QuestionNAnswer.Location = new System.Drawing.Point(0, 443);
-            this.QuestionNAnswer.Margin = new System.Windows.Forms.Padding(4);
+            this.QuestionNAnswer.Location = new System.Drawing.Point(0, 360);
             this.QuestionNAnswer.Name = "QuestionNAnswer";
-            this.QuestionNAnswer.Size = new System.Drawing.Size(1287, 254);
+            this.QuestionNAnswer.Size = new System.Drawing.Size(965, 206);
             this.QuestionNAnswer.TabIndex = 1;
             // 
             // AnsD
             // 
             this.AnsD.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnsD.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.AnsD.Location = new System.Drawing.Point(700, 199);
-            this.AnsD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AnsD.Location = new System.Drawing.Point(525, 162);
             this.AnsD.Name = "AnsD";
-            this.AnsD.Size = new System.Drawing.Size(476, 43);
+            this.AnsD.Size = new System.Drawing.Size(357, 35);
             this.AnsD.TabIndex = 4;
             this.AnsD.Text = "4: ";
             this.AnsD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -412,10 +388,9 @@
             // 
             this.AnsC.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnsC.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.AnsC.Location = new System.Drawing.Point(700, 133);
-            this.AnsC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AnsC.Location = new System.Drawing.Point(525, 108);
             this.AnsC.Name = "AnsC";
-            this.AnsC.Size = new System.Drawing.Size(476, 43);
+            this.AnsC.Size = new System.Drawing.Size(357, 35);
             this.AnsC.TabIndex = 3;
             this.AnsC.Text = "3: ";
             this.AnsC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -424,10 +399,9 @@
             // 
             this.AnsB.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnsB.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.AnsB.Location = new System.Drawing.Point(121, 199);
-            this.AnsB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AnsB.Location = new System.Drawing.Point(91, 162);
             this.AnsB.Name = "AnsB";
-            this.AnsB.Size = new System.Drawing.Size(476, 43);
+            this.AnsB.Size = new System.Drawing.Size(357, 35);
             this.AnsB.TabIndex = 2;
             this.AnsB.Text = "2: ";
             this.AnsB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -436,10 +410,9 @@
             // 
             this.AnsA.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnsA.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.AnsA.Location = new System.Drawing.Point(121, 133);
-            this.AnsA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AnsA.Location = new System.Drawing.Point(91, 108);
             this.AnsA.Name = "AnsA";
-            this.AnsA.Size = new System.Drawing.Size(476, 43);
+            this.AnsA.Size = new System.Drawing.Size(357, 35);
             this.AnsA.TabIndex = 1;
             this.AnsA.Text = "1: ";
             this.AnsA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -448,10 +421,9 @@
             // 
             this.Question.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Question.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Question.Location = new System.Drawing.Point(155, 21);
-            this.Question.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Question.Location = new System.Drawing.Point(116, 17);
             this.Question.Name = "Question";
-            this.Question.Size = new System.Drawing.Size(992, 71);
+            this.Question.Size = new System.Drawing.Size(744, 58);
             this.Question.TabIndex = 0;
             this.Question.Text = "Temp";
             // 
@@ -461,11 +433,9 @@
             this.InsBox.Controls.Add(this.InsLabel);
             this.InsBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InsBox.ForeColor = System.Drawing.SystemColors.Control;
-            this.InsBox.Location = new System.Drawing.Point(662, 13);
-            this.InsBox.Margin = new System.Windows.Forms.Padding(4);
+            this.InsBox.Location = new System.Drawing.Point(496, 11);
             this.InsBox.Name = "InsBox";
-            this.InsBox.Padding = new System.Windows.Forms.Padding(4);
-            this.InsBox.Size = new System.Drawing.Size(334, 422);
+            this.InsBox.Size = new System.Drawing.Size(250, 343);
             this.InsBox.TabIndex = 5;
             this.InsBox.TabStop = false;
             this.InsBox.Text = "Instructions";
@@ -473,9 +443,10 @@
             // InsLabel
             // 
             this.InsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.InsLabel.Location = new System.Drawing.Point(7, 41);
+            this.InsLabel.Location = new System.Drawing.Point(5, 33);
+            this.InsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.InsLabel.Name = "InsLabel";
-            this.InsLabel.Size = new System.Drawing.Size(320, 369);
+            this.InsLabel.Size = new System.Drawing.Size(240, 300);
             this.InsLabel.TabIndex = 0;
             this.InsLabel.Text = resources.GetString("InsLabel.Text");
             // 
@@ -485,9 +456,11 @@
             this.AnsHereGBox.Controls.Add(this.InputBox);
             this.AnsHereGBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnsHereGBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.AnsHereGBox.Location = new System.Drawing.Point(291, 303);
+            this.AnsHereGBox.Location = new System.Drawing.Point(218, 246);
+            this.AnsHereGBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AnsHereGBox.Name = "AnsHereGBox";
-            this.AnsHereGBox.Size = new System.Drawing.Size(363, 135);
+            this.AnsHereGBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AnsHereGBox.Size = new System.Drawing.Size(272, 110);
             this.AnsHereGBox.TabIndex = 7;
             this.AnsHereGBox.TabStop = false;
             this.AnsHereGBox.Text = "Answer Here";
@@ -498,9 +471,10 @@
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubmitButton.ForeColor = System.Drawing.Color.White;
-            this.SubmitButton.Location = new System.Drawing.Point(132, 75);
+            this.SubmitButton.Location = new System.Drawing.Point(99, 61);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(115, 34);
+            this.SubmitButton.Size = new System.Drawing.Size(86, 28);
             this.SubmitButton.TabIndex = 2;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = false;
@@ -509,10 +483,11 @@
             // InputBox
             // 
             this.InputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputBox.Location = new System.Drawing.Point(6, 42);
+            this.InputBox.Location = new System.Drawing.Point(4, 34);
+            this.InputBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InputBox.MaxLength = 1;
             this.InputBox.Name = "InputBox";
-            this.InputBox.Size = new System.Drawing.Size(351, 27);
+            this.InputBox.Size = new System.Drawing.Size(264, 23);
             this.InputBox.TabIndex = 2;
             this.InputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -520,13 +495,11 @@
             // 
             this.ClockBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClockBox.Controls.Add(this.Timer);
-            this.ClockBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClockBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClockBox.ForeColor = System.Drawing.SystemColors.Control;
-            this.ClockBox.Location = new System.Drawing.Point(13, 303);
-            this.ClockBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ClockBox.Location = new System.Drawing.Point(10, 246);
             this.ClockBox.Name = "ClockBox";
-            this.ClockBox.Padding = new System.Windows.Forms.Padding(4);
-            this.ClockBox.Size = new System.Drawing.Size(267, 135);
+            this.ClockBox.Size = new System.Drawing.Size(200, 110);
             this.ClockBox.TabIndex = 2;
             this.ClockBox.TabStop = false;
             this.ClockBox.Text = "Timer";
@@ -537,11 +510,11 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1287, 697);
+            this.ClientSize = new System.Drawing.Size(965, 566);
             this.Controls.Add(this.ClockBox);
             this.Controls.Add(this.AnsHereGBox);
             this.Controls.Add(this.InsBox);
@@ -551,7 +524,7 @@
             this.Controls.Add(this.LifelineBox);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Who Wants To Be A Millionaire";

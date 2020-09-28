@@ -37,16 +37,19 @@ namespace millionaire
          */
         private void MakeInput(StreamReader input)
         {
-            Random rand = new Random();
+            Random rand = new Random(); //gets a ranom seed generator
             int rannum = 0;
             int i = 0;
+
+            //DO WHILE LOOP
             do
             {
-                questions[i] = input.ReadLine();
-                correctAns[i] = input.ReadLine();
+                questions[i] = input.ReadLine();//gets question
+                correctAns[i] = input.ReadLine();//places correct answer
 
-                rannum = rand.Next(1, 5);
+                rannum = rand.Next(1, 5);//radom num 1-4
 
+                //randomizes input
                 if (rannum == 1)
                 {
                     ansA[i] = correctAns[i];
@@ -80,6 +83,11 @@ namespace millionaire
             } while (i < 15);
         }
 
+        /*
+         *      Method Name: Game
+         *      Purpose: makes all defualts with default
+         *      constructor
+         */
         public Game()
         {
             questions = new string[15];
@@ -91,15 +99,6 @@ namespace millionaire
             correctAns = new string[15];
 
             roundIndex = 0;
-        }
-
-        /*
-         *      Method Name: test
-         *      Purpose: test one of the answer arrays
-         */
-        public string test()
-        {
-            return ansA[0];
         }
 
         /*
@@ -119,7 +118,7 @@ namespace millionaire
          *      pops up informing the user that they did not choose a
          *      valid file.
          */
-        public void PromptFile(bool bad)
+        public void PromptFile(ref bool bad)
         {
             // create dialog box enabling user to open file
             OpenFileDialog fileChooser = new OpenFileDialog();
@@ -165,28 +164,57 @@ namespace millionaire
             } 
             else
             {
-                bad = true;
+                bad = true; //bool return to check if form needs 
+                            //closed for error handling
             }
         }
 
+        /*
+         *      Method Name: Question
+         *      Purpose: gets question at round
+         */
         public string Question
         { get { return questions[roundIndex]; } }
 
+        /*
+         *      Method Name: A
+         *      Purpose: gets answer choice 1
+         */
         public string A
         { get { return ansA[roundIndex]; } }
 
+        /*
+         *      Method Name: B
+         *      Purpose: gets answer choice 2
+         */
         public string B
         { get { return ansB[roundIndex]; } }
 
+        /*
+         *      Method Name: C
+         *      Purpose: gets answer choice 3
+         */
         public string C
         { get { return ansC[roundIndex]; } }
 
+        /*
+         *      Method Name: D
+         *      Purpose: gets answer choice 4
+         */
         public string D
         { get { return ansD[roundIndex]; } }
 
+        /*
+         *      Method Name: Round
+         *      Purpose: gets round game is on
+         */
         public int Round
         { get { return roundIndex; } }
 
+        /*
+         *      Method Name: Answer
+         *      Purpose: gets answe to round
+         */
         public string Answer
         { get{ return correctAns[roundIndex]; } }
 
