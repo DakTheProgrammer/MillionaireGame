@@ -3,7 +3,11 @@
  *              Date: 28 September 2020
  *              Class: CMPS 4143 C# Programming
  *              File: Game.cs, Millionaire Game
- *              Purpose:  
+ *              Purpose: Moves the answer choices around so the 
+ *              user doesn't choose the same, traverses the user
+ *              through the rounds, prompts the user for an infile
+ *              and prints the questions and the answers to the 
+ *              labels.
 */
 using System;
 using System.Collections.Generic;
@@ -25,6 +29,12 @@ namespace millionaire
         private string[] correctAns;
         private int roundIndex;
 
+        /*
+         *      Method Name: MakeInput
+         *      Purpose: Randomizes the answer positions for each
+         *      question and checks to see which is the correct 
+         *      answer
+         */
         private void MakeInput(StreamReader input)
         {
             Random rand = new Random();
@@ -83,16 +93,32 @@ namespace millionaire
             roundIndex = 0;
         }
 
+        /*
+         *      Method Name: test
+         *      Purpose: test one of the answer arrays
+         */
         public string test()
         {
             return ansA[0];
         }
 
+        /*
+         *      Method Name: incRound
+         *      Purpose: Increments the rounds.
+         */
         public void incRound()
         {
             roundIndex++;
         }
 
+        /*
+         *      Method Name: PromptFile
+         *      Purpose: Creates a dialog box for the user to be able
+         *      to choose a text file, if the user doesn't choose an
+         *      input file or puts an invalid file, a message box
+         *      pops up informing the user that they did not choose a
+         *      valid file.
+         */
         public void PromptFile(bool bad)
         {
             // create dialog box enabling user to open file
