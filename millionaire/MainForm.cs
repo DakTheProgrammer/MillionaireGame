@@ -1,4 +1,16 @@
-﻿using System;
+﻿/*
+ *              Names: Dakota Wilson, Christian Douglas
+ *              Date: 28 September 2020
+ *              Class: CMPS 4143 C# Programming
+ *              File: Game.cs, Millionaire Game
+ *              Purpose: Contains the code for the GUI components to allow the user
+ *              to play the game Do You Want to Be a Millionaire. It also has some
+ *              of the code containing the fuction of the game that allows the user
+ *              to play another game, methods for the behavior of the questions if
+ *              answered correctly or in correctly. Also code for the function of 
+ *              the timer.
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,18 +26,23 @@ namespace millionaire
 {
     public partial class MainForm : Form
     {
-        Game GameMil = new Game();
+        Game GameMil = new Game();   //Creates an object for Game class
         
-        Label[] Rounds;
+        Label[] Rounds;             //Array containing the label for each round
         
-        int safe = 0;
+        int safe = 0;               //Variable to mark the checkpoints in the game
 
-        int counter = 30;
+        int counter = 30;           //variable for the Time_Tick method
 
         SoundPlayer StartAudio = new SoundPlayer(Properties.Resources.lets_play);
         SoundPlayer CorAudio = new SoundPlayer(Properties.Resources.correctanswer);
         SoundPlayer InCortAudio = new SoundPlayer(Properties.Resources.wrong_answer);
 
+        /*
+         *          Method Name: PlayAgain
+         *          Return: void
+         *          Purpose: Allows the user to start a new game
+         */
         private void PlayAgain()
         {
             MainForm NewForm = new MainForm();
@@ -33,6 +50,13 @@ namespace millionaire
             this.Dispose(false);
         }
 
+        /*
+         *          Method Name: correct
+         *          Return: void
+         *          Purpose: Shows the behavior of the question when
+         *          the user gets the question correct or if the user 
+         *          beats the game.
+         */
         private void correct()
         {
             CorAudio.Play();
@@ -85,6 +109,12 @@ namespace millionaire
             }
         }
 
+        /*
+         *          Method Name: incorrect
+         *          Return: void
+         *          Purpose: Shows the behavior of the question
+         *          when the user gets the question wrong
+         */
         private void incorrect()
         {
             InCortAudio.Play();
@@ -131,6 +161,14 @@ namespace millionaire
             InitializeComponent();
         }
 
+        /*
+         *          Method Name: MainForm_Load
+         *          Purpose: Event of the form component, on load
+         *          the Time variable gets initialized to 1 second 
+         *          and is started, the Rounds array gets initialized,
+         *          Ans lables get initialized, Rounds background color
+         *          changes to orange.
+         */
         private void MainForm_Load(object sender, EventArgs e)
         {
             bool check = false;
@@ -164,6 +202,13 @@ namespace millionaire
             Rounds[GameMil.Round].BackColor = Color.Orange;
         }
 
+        /*
+         *      Method Name: SubmitButton_Click
+         *      Purpose: Button component that submits the user's
+         *      answer and checks to see if the answer is correct
+         *      or not, also checks exception handeling in case 
+         *      the user submits a blank answer.
+         */
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             try
@@ -230,6 +275,12 @@ namespace millionaire
             }
         }
 
+        /*
+         *      Method Name: fiftyfifty_Click
+         *      Purpose: Button component that can be used once, 
+         *      eliminates 2 of the answers, leaving the correct
+         *      answer and one other answer.
+         */
         private void fiftyfifty_Click(object sender, EventArgs e)
         {
             if (GameMil.A == GameMil.Answer)
@@ -257,6 +308,12 @@ namespace millionaire
             fiftyfifty.Visible = false;
         }
 
+        /*
+         *      Method Name: walk
+         *      Purpose: Button component that allows the user to quit
+         *      the game at any point and prints out the total value of
+         *      money that the user had won.
+         */
         private void walk_Click(object sender, EventArgs e)
         {
             string text = "";
@@ -294,6 +351,10 @@ namespace millionaire
 
         }
 
+        /*
+         *      Method Name: Time_Tick
+         *      Purpose: Method for the timer 
+         */
         private void Time_Tick(object sender, EventArgs e)
         {
             counter--;

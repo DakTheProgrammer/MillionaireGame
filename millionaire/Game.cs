@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ *              Names: Dakota Wilson, Christian Douglas
+ *              Date: 28 September 2020
+ *              Class: CMPS 4143 C# Programming
+ *              File: Game.cs, Millionaire Game
+ *              Purpose:  
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
